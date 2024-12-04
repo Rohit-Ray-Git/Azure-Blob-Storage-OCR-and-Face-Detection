@@ -145,10 +145,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Streamlit UI with customized title size
+# Streamlit UI
 st.markdown("<h1 style='text-align: center; font-size: 40px;'>Azure Blob Storage, OCR, and Face Detection 🧑‍💻📸</h1>", unsafe_allow_html=True)
 
-# Layout for centering the content
 col1, col2, col3 = st.columns([1, 3, 1])
 
 with col2:
