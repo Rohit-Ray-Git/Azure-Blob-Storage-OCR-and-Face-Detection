@@ -14,12 +14,11 @@ st.set_page_config(page_title="Azure AI - OCR & Face Detection", page_icon="🧑
 
 # Azure configuration
 AZURE_REGION = "eastus"
-AZURE_KEY = "AAN27SwS0N3lWYcR3D2uzM2CjbZjC62vgW1TjMZx1nTH1NHzZLHQJQQJ99ALACYeBjFXJ3w3AAAFACOG5MUZ"
-AZURE_ENDPOINT = "https://compvisionazureai.cognitiveservices.azure.com/"
-FACE_API_KEY = "6s4ohaKq6Ky99kWm4uhVevspIACBD5O2ref4hPv1TgyWH2lTeWfMJQQJ99ALACYeBjFXJ3w3AAAKACOGqC4a"
-FACE_API_ENDPOINT = "https://azure-faceai.cognitiveservices.azure.com/"
-STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=azuremlai;AccountKey=L+lsHN+sEvhbWIw/7ePRwUoBaB52IGFcV4XZrlzWg2l2guqkhd52ByrXEYrjnyw1n1zbHb2bWLt++AStozd6kw==;EndpointSuffix=core.windows.net"
-
+AZURE_KEY = "YOUR_AZURE_KEY"
+AZURE_ENDPOINT = "YOUR_AZURE_ENDPOINT"
+FACE_API_KEY = "YOUR_FACE_API_KEY"
+FACE_API_ENDPOINT = "YOUR_FACE_API_ENDPOINT"
+STORAGE_CONNECTION_STRING = "YOUR_STORAGE_CONNECTION_STRING"
 # Azure clients
 computervision_client = ComputerVisionClient(AZURE_ENDPOINT, CognitiveServicesCredentials(AZURE_KEY))
 blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
