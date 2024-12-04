@@ -13,7 +13,7 @@ import base64
 st.set_page_config(page_title="Azure AI - OCR & Face Detection", page_icon="🧑‍💻")
 
 # Azure configuration
-AZURE_REGION = "eastus"
+AZURE_REGION = "YOUR_REGION"
 AZURE_KEY = "YOUR_AZURE_KEY"
 AZURE_ENDPOINT = "YOUR_AZURE_ENDPOINT"
 FACE_API_KEY = "YOUR_FACE_API_KEY"
