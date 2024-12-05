@@ -14,13 +14,13 @@ st.set_page_config(page_title="Azure AI - OCR & Face Detection", page_icon="🧑
 
 # Azure configuration
 AZURE_REGION = "YOUR_REGION"
-AZURE_KEY = "YOUR_AZURE_KEY"
+AZURE_STORAGE_KEY = "YOUR_AZURE_STORAGE_KEY"
 AZURE_ENDPOINT = "YOUR_AZURE_ENDPOINT"
 FACE_API_KEY = "YOUR_FACE_API_KEY"
 FACE_API_ENDPOINT = "YOUR_FACE_API_ENDPOINT"
 STORAGE_CONNECTION_STRING = "YOUR_STORAGE_CONNECTION_STRING"
 # Azure clients
-computervision_client = ComputerVisionClient(AZURE_ENDPOINT, CognitiveServicesCredentials(AZURE_KEY))
+computervision_client = ComputerVisionClient(AZURE_ENDPOINT, CognitiveServicesCredentials(AZURE_STORAGE_KEY))
 blob_service_client = BlobServiceClient.from_connection_string(STORAGE_CONNECTION_STRING)
 face_client = FaceClient(FACE_API_ENDPOINT, CognitiveServicesCredentials(FACE_API_KEY))
 
